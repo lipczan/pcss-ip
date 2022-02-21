@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block title %}IP{% endblock %} {% block body %}
+<h1>Check your IP</h1>
+<br>
+<p>Your IP address: {{data}} Received: {{req_time}}</p>
+</br>
+<h2>
+    IP Log:
+</h2>
+
+{% for item in array %}
+<p> {{ item }} </p>
+{% endfor %} {% endblock %}
